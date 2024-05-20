@@ -132,9 +132,9 @@ La Función main:
 El método **main** es el punto de entrada de un programa Java. Cuando se ejecuta un programa Java, el sistema comienza ejecutando el método main de la clase principal. La sintaxis para definir el método main es la siguiente:
 
 ````java
-public class MiPrograma {
+public class HelloWorld {
     public static void main(String[] args) {
-        System.out.println("¡Hola, mundo!");
+        System.out.println("Hola mundo!");
     }
 }
 ````
@@ -146,5 +146,5 @@ La palabra clave **static** indica que el método main pertenece a la clase en s
 
 **String[] args** es un parámetro que permite pasar argumentos desde la línea de comandos al programa.
 
-En Java, el nombre del archivo debe coincidir exactamente con el nombre de la clase principal, incluida la capitalización. Por ejemplo, si la clase principal se llama **MiPrograma**, el nombre del archivo debe ser **MiPrograma.java**.
-En este ejemplo, la clase principal se llama MiPrograma y contiene un único método main que imprime "¡Hola, mundo!" en la consola cuando se ejecuta el programa.
+En Java, el nombre del archivo debe coincidir exactamente con el nombre de la clase principal, incluida la capitalización. Por ejemplo, si la clase principal se llama **HelloWorld**, el nombre del archivo debe ser **HelloWorld.java**.
+En este ejemplo, la clase principal se llama HelloWorld y contiene un único método main que imprime "¡Hola, mundo!" en la consola cuando se ejecuta el programa.
