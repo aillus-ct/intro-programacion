@@ -1,6 +1,6 @@
 # Introduccion a GIT
 
-![alt text](images/gits.png)
+![](images/gits.png)
 
 - ***Sistema de control de versiones:*** Software que ayuda a gestionar y mantener un registro de los cambios realizados en los archivos a lo largo del tiempo.
 
@@ -17,7 +17,7 @@
 
 ### Casos de uso más comunes de Git:
 
-- ***Codigo fuente de applicaciones:*** Se utilizan para mantner y compartir codigo fuente de programas y aplicaciones ya sea en forma publica o privada.
+- ***Código fuente de aplicaciones:*** Se utilizan para mantener y compartir codigo fuente de programas y aplicaciones ya sea en forma publica o privada.
 
 - ***Documentación:*** Mantener un registro de versiones de documentos importantes.
 
@@ -32,18 +32,20 @@ GitHub no solo almacena repositorios, sino que también ofrece herramientas para
 
 ### Diferencias y Relación entre Git y GitHub:
 
-- ***Git:*** Es la herramienta que gestiona el historial de cambios localmente en tu computadora.
+- ***Git:*** Es la herramienta que gestiona el historial de cambios localmente en la computadora local.
 
 - ***GitHub:*** Es un servicio que permite almacenar los repositorios de Git en la nube, facilitando la colaboración en línea.
 
+![](images/dist.png)
+
 ## Práctica
 
-- Navegar por la cuenta de github del Aillus
-- Creacion de una cuenta en github
+- Navegar por la cuenta de github de Aillus
+- Creación de una cuenta personal en github
 
 ## Comandos Esenciales ##
 
-- ***git clone [ruta repositorio]***: Bajar un repositorio la computadora local
+- ***git clone [ruta repositorio]***: Bajar un repositorio a la computadora local
 
 - ***git status***: Ver el estado de los archivos en el directorio de trabajo y la zona de preparación.
 
@@ -53,13 +55,15 @@ GitHub no solo almacena repositorios, sino que también ofrece herramientas para
 
 - ***git push***: Subimos los cambios locales a nuestro repositorio remoto
 
+- ***git pull***: Actualizamos los cambios remotos en nuestra máquina local
+
 ## Flujo de trabajo básico en Git:
 
 - **Fork**: Hacer una copia del proyecto en el cual queremos trabajar en nuestra cuenta de github
 
 ![](images/fork.png)
 
-- **Clonar nuestro repositorio:** Esto consiste en bajarse a la computadora una copia local de los archivos del repositorio sobre el cual queremos trabajar
+- **Clonar nuestro repositorio:** Esto consiste en bajarse a la computadora local una copia de los archivos del repositorio sobre el cual queremos trabajar
 
 ```bash
 git clone https://github.com/[usuario]/[nombre-repositorio]
