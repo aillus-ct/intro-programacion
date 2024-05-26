@@ -1,5 +1,7 @@
 # Introduccion a GIT
 
+![alt text](images/gits.png)
+
 - ***Sistema de control de versiones:*** Software que ayuda a gestionar y mantener un registro de los cambios realizados en los archivos a lo largo del tiempo.
 
 - ***Repositorio:*** Un contenedor que almacena el historial completo de un proyecto, incluyendo todas sus versiones y cambios.
@@ -39,22 +41,6 @@ GitHub no solo almacena repositorios, sino que también ofrece herramientas para
 - Navegar por la cuenta de github del Aillus
 - Creacion de una cuenta en github
 
-## Flujo de trabajo básico en Git:
-
-- **Fork**: Hacer una copia del proyecto en el cual queremos trabajar en nuestra cuenta de github
-
-- **Clonar el repositorio:** Esto consiste en bajarse a la computadora una copia local de los archivos del repositorio sobre el cual queremos trabajar
-
-- **Modificaciones:** Hacer cambios en los archivos en la carpeta de trabajo local
-
-- **Preparar los cambios:** Añadir los cambios a la zona de preparación (staging area) usando el comando *git add*
-
-- **Confirmar cambios**: Guardar los cambios en el repositorio local usando *git commit*
-
-- **Subir los cambios**: Copiamos los camnios al repositorio remoto (git push):
-
-- **Pull request**: Se pide permiso para integrar los cambios en el proyecto original
-
 ## Comandos Esenciales ##
 
 - ***git clone [ruta repositorio]***: Bajar un repositorio la computadora local
@@ -67,13 +53,52 @@ GitHub no solo almacena repositorios, sino que también ofrece herramientas para
 
 - ***git push***: Subimos los cambios locales a nuestro repositorio remoto
 
+## Flujo de trabajo básico en Git:
+
+- **Fork**: Hacer una copia del proyecto en el cual queremos trabajar en nuestra cuenta de github
+
+![](images/fork.png)
+
+- **Clonar nuestro repositorio:** Esto consiste en bajarse a la computadora una copia local de los archivos del repositorio sobre el cual queremos trabajar
+
+```bash
+git clone https://github.com/[usuario]/[nombre-repositorio]
+```
+
+- **Modificaciones:** Hacer cambios en los archivos en la carpeta de trabajo local
+
+- **Preparar los cambios:** Añadir los cambios a la zona de preparación (staging area) usando el comando *git add*
+
+```bash
+git add .
+```
+
+- **Confirmar cambios**: Guardar los cambios en el repositorio local usando *git commit*
+
+```bash
+git commit -m "Breve descripcion del cambio realizado"
+```
+
+- **Subir los cambios**: Copiamos los camnios al repositorio remoto (git push):
+
+```bash
+git push
+```
+
+- **Pull request**: Se pide permiso para integrar los cambios en el proyecto original
+
+![](images/pr.png)
+![](images/pr2.png)
+
+
+
+
 ## Práctica
 
-- Clonar repositorio del curso (git clone)
-- Realizar cambios creando una carpeta con el nombre del alumno en la carpeta "alumnos" 
-- Crear dentro de esta nueva carpeta un archivo HolaMundo.java (Copiarlo del primer encuentro)
-- Ver el estado del repositorio local (git status)
-- Añadir los cambios (git add)
-- Confirmar los cambios (git commit)
-- Hacer el pull request
-- Revisar que los cambios fueron aprobados
+1. Clonar repositorio del curso (**git clone**)
+2. Realizar cambios creando una carpeta con el nombre del alumno en la carpeta "alumnos"y dentro de esta un archivo HolaMundo.java (Copiarlo del primer encuentro)
+3. Ver el estado del repositorio local (**git status**)
+4. Añadir los cambios (**git add**)
+5. Confirmar los cambios (**git commit**)
+6. Hacer el pull request
+7. Revisar que los cambios fueron aprobados
