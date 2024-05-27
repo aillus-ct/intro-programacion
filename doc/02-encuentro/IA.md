@@ -21,3 +21,39 @@ Características:
   - Aprendizaje: Utiliza algoritmos de aprendizaje automático para mejorar con el tiempo.
   - Interacción humana: Puede interactuar con los humanos a través de interfaces como chatbots y asistentes virtuales.
 Fuente: ChatGPT
+
+### Inteligencia General Artificial (AGI)
+La Inteligencia General Artificial (AGI), también conocida como inteligencia artificial fuerte, se refiere a una máquina que tiene la capacidad de entender, aprender y aplicar conocimiento en una variedad de tareas al mismo (o mayor) nivel que un ser humano.
+***Características:***
+  - Versatilidad: A diferencia de la IA, que está diseñada para tareas específicas, la AGI puede manejar una amplia gama de tareas.
+  - Adaptabilidad: La AGI puede adaptarse a nuevas situaciones sin necesidad de ser reprogramada.
+  - Conciencia: Teóricamente, la AGI tendría una forma de conciencia o autoentendimiento, similar a los humanos.
+
+### Modelos de Lenguaje
+Los modelos de lenguaje son algoritmos que pueden generar, interpretar y manipular textos. Se entrenan en grandes conjuntos de datos textuales y utilizan aprendizaje automático para entender el contexto y generar respuestas coherentes.
+***Características:***
+  - Generación de texto: Pueden producir texto que parece haber sido escrito por un humano.
+  - Comprensión del contexto: Son capaces de entender y mantener el contexto a lo largo de una conversación.
+  - Aplicaciones: Se utilizan en una variedad de aplicaciones, incluyendo traducción automática, chatbots y asistentes virtuales.
+
+### Ejemplo de IA y modelo de lenguaje
+***ChatGPT***
+ChatGPT es un modelo de lenguaje desarrollado por OpenAI que está diseñado para mantener conversaciones de texto con los usuarios. Está basado en la arquitectura GPT (Generative Pre-trained Transformer | Transformador generativo preentrenado), específicamente en las versiones avanzadas como GPT-3 y GPT-4.
+Características:
+Conversacional: Optimizado para mantener conversaciones fluidas y coherentes.
+Entrenamiento extensivo: Entrenado en grandes cantidades de datos textuales para entender y generar respuestas precisas.
+Versatilidad: Puede responder preguntas, generar ideas, proporcionar explicaciones y mucho más.
+Usos:
+  - Asistentes virtuales: Para proporcionar soporte al cliente y asistencia personal.
+  - Educación: Ayuda en la tutoría y el aprendizaje interactivo.
+  - Entretenimiento: Como un compañero de conversación.
+
+### Ejemplos de Modelos de Lenguaje basados en Machine Learning
+***GPT (Generative Pre-trained Transformer)***: Un modelo de lenguaje desarrollado por OpenAI que utiliza aprendizaje profundo para generar texto que parece haber sido escrito por humanos.
+***BERT (Bidirectional Encoder Representations from Transformers)***: Un modelo de lenguaje desarrollado por Google que se utiliza para tareas de comprensión del lenguaje.
+***T5 (Text-to-Text Transfer Transformer)***: Un modelo de lenguaje de Google que trata todas las tareas de procesamiento del lenguaje como tareas de generación de texto.
+
+### Modelos de lenguaje como herramientas de código
+Las herramientas mencionadas pueden utilizarse como asistentes y fuentes de consultas, como hemos visto, para varias actividades y trabajos. Una de esas utilidades es la programación de software. Los modelos de lenguaje pueden sostener una conversación técnica con el programador/a, sugerir código y hasta predecirlo a partir del nombre de una función, por ejemplo.
+Una de esas herramientas es ***Blackbox AI***, similar a ChatGPT ofrecen un entorno web de consulta en interacción https://www.blackbox.ai/
+En nuestro curso además utilizaremos la versión de esta herramienta que funciona como agregado (add-on o plugin)  de VS Code: https://marketplace.visualstudio.com/items?itemName=Blackboxapp.blackbox
