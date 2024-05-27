@@ -58,8 +58,7 @@ Las herramientas mencionadas pueden utilizarse como asistentes y fuentes de cons
 Una de esas herramientas es ***Blackbox AI***, similar a ChatGPT ofrecen un entorno web de consulta en interacción https://www.blackbox.ai/
 En nuestro curso además utilizaremos la versión de esta herramienta que funciona como agregado (add-on o plugin)  de VS Code: https://marketplace.visualstudio.com/items?itemName=Blackboxapp.blackbox
 
-
-![photo_5089147289682947526_y](https://github.com/aillus-ct/intro-programacion/assets/13785484/c6dcd686-d3aa-48b7-89e7-0f07c0b80c5b)
-![photo_5089147289682947525_x](https://github.com/aillus-ct/intro-programacion/assets/13785484/246856b2-add5-4693-9b1f-161f9740ed88)
 ![photo_5089147289682947524_y](https://github.com/aillus-ct/intro-programacion/assets/13785484/81ebbb2c-8b05-40e8-8b9d-7801c428c851)
+![photo_5089147289682947525_x](https://github.com/aillus-ct/intro-programacion/assets/13785484/246856b2-add5-4693-9b1f-161f9740ed88)
+![photo_5089147289682947526_y](https://github.com/aillus-ct/intro-programacion/assets/13785484/c6dcd686-d3aa-48b7-89e7-0f07c0b80c5b)
 ![photo_5089147289682947523_y](https://github.com/aillus-ct/intro-programacion/assets/13785484/b2394122-7f57-4317-99e3-0f310fdaebe2)
