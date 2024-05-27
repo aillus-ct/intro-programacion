@@ -1,5 +1,5 @@
 ### Definiciones de IA
-***La IA y lo que entendemos por ella admite diferentes definiciones y existen discrepancias acerca del tema. Repasemos algunas definiciones.
+***La IA y lo que entendemos por ella admite diferentes definiciones y existen discrepancias acerca del tema. Repasemos algunas definiciones.***
 
 - La inteligencia artificial (IA), en el contexto de las ciencias de la computación, es una disciplina y un conjunto de capacidades cognoscitivas e intelectuales expresadas por sistemas informáticos o combinaciones de algoritmos cuyo propósito es la creación de máquinas que imiten la inteligencia humana para realizar tareas, y que pueden mejorar conforme recopilen información.
 Fuente: https://es.wikipedia.org/wiki/Inteligencia_artificial
