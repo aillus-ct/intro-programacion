@@ -12,4 +12,5 @@
 - Visual Estudio: https://code.visualstudio.com/
 - Encuentro 01 Video: https://www.youtube.com/live/qAG6cmW_tfo?si=mhrvZOyTYUXY_emF
 - Encuentro 01 Presentación: https://docs.google.com/presentation/d/1eVGfMyvpmREl5UO-6B-S-b6Twd4BhmhbWY05jkutKHc/edit#slide=id.p
-- Instalacion del JDK: https://youtu.be/9mKhehn1hNs
+- Instalación del JDK: https://youtu.be/9mKhehn1hNs
+- Instalación de Visual Studio Code y Extensión de Java: https://youtu.be/1qIwtFYeSs0 
