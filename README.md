@@ -15,3 +15,4 @@
 - Instalación del JDK: https://youtu.be/9mKhehn1hNs
 - Instalación de Visual Studio Code y Extensión de Java: https://youtu.be/1qIwtFYeSs0 
 - Instalacion de Git: https://youtu.be/mhMJY4U2gD8
+- Introducción al uso de la Consola/Terminal/Cmd: https://youtu.be/MRgZoMIoWxg
