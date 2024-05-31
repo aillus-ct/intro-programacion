@@ -100,9 +100,10 @@ git push
 ## Práctica
 
 1. Clonar repositorio del curso (**git clone**)
-2. Realizar cambios creando una carpeta con el nombre del alumno en la carpeta "alumnos"y dentro de esta un archivo HolaMundo.java (Copiarlo del primer encuentro)
+2. Realizar cambios creando una carpeta con el nombre del alumno en la carpeta "alumnos"y dentro de esta un archivo HelloWorld.java (Copiarlo del primer encuentro)
 3. Ver el estado del repositorio local (**git status**)
 4. Añadir los cambios (**git add**)
 5. Confirmar los cambios (**git commit**)
-6. Hacer el pull request
-7. Revisar que los cambios fueron aprobados
+6. Llevar los cambios mi repositorio remoto (git push)
+7. Hacer el pull request
+8. Revisar que los cambios fueron aprobados
