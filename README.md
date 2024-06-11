@@ -4,6 +4,8 @@
 
 ### [Encuentro 1](doc/01-encuentro/README.md)
 ### [Encuentro 2](doc/02-encuentro/README.md)
+### [Encuentro 3](doc/03-encuentro/README.md)
+### [Encuentro 4](doc/04-encuentro/README.md)
 
 
 ### Links:
