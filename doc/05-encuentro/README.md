@@ -192,6 +192,35 @@ if (x > 0) {
 }
 ```
 
+```java
+int x = 10;
+
+if (x > 0) {
+    System.out.println("x es positivo");
+} else if (x < 0) {
+    System.out.println("x es negativo");
+} else {
+    System.out.println("x es cero");
+}
+```
+```java
+int day = 3;
+switch (day) {
+    case 1:
+        System.out.println("Lunes");
+        break;
+    case 2:
+        System.out.println("Martes");
+        break;
+    case 3:
+        System.out.println("Miércoles");
+        break;
+    default:
+        System.out.println("Otro día");
+        break;
+}
+```
+
 
 ### Sentencias de Bucle:
 
@@ -209,11 +238,20 @@ Sentencias de Interrupción de Bucle:
 for (int i = 0; i < 10; i++) {
     System.out.println(i);
 }
-
+```
+```java
 int x = 0;
 while (x < 10) {
     x++;
 }
+
+```
+```java
+int x = 0;
+do {
+    System.out.println(x);
+    x++;
+} while (x < 5);
 ```
 
 ### Ejercicios
