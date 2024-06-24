@@ -167,3 +167,61 @@ mensaje += " Mundo";
 4. Escribe un programa que pida la edad de una persona y calcule su edad equivalente en años de perro (un año humano equivale a aproximadamente siete años de perro).
 
 5. Escribe un programa que convierta temperaturas de Celsius a Fahrenheit y viceversa. El programa debe pedir al usuario que ingrese una temperatura y luego realizar la conversión.
+
+
+# SENTENCIAS
+
+## Sentencias de Control de Flujo:
+
+Las sentencias de control de fluj son herramientas fundamentales que permiten dirigir la ejecución del programa según ciertas condiciones y repeticiones. Estas sentencias permiten que el programa tome decisiones, repita bloques de código y maneje el flujo de ejecución de manera dinámica.
+
+## Tipos de Sentencias de Control de Flujo
+
+### Sentencias Condicionales:
+
+- **if**: Ejecuta un bloque de código solo si una condición especificada es verdadera.
+- **else if**: Proporciona una condición adicional si la condición anterior es falsa.
+- **else**: Ejecuta un bloque de código si todas las condiciones anteriores son falsas.
+- **switch**: Selecciona y ejecuta un bloque de código entre múltiples opciones basadas en el valor de una expresión.
+
+```java
+if (x > 0) {
+    System.out.println("x es positivo");
+} else {
+    System.out.println("x no es positivo");
+}
+```
+
+
+### Sentencias de Bucle:
+
+- **for**: Repite un bloque de código un número específico de veces.
+- **while**: Repite un bloque de código mientras una condición sea verdadera.
+- **do-while**: Similar al while, pero garantiza que el bloque de código se ejecute al menos una vez.
+- **for-each**: Simplifica la iteración sobre arrays y colecciones.
+
+Sentencias de Interrupción de Bucle:
+
+- **break**: Termina el bucle más cercano en el que se encuentra.
+- **continue**: Salta la iteración actual del bucle y continúa con la siguiente.
+
+```java
+for (int i = 0; i < 10; i++) {
+    System.out.println(i);
+}
+
+int x = 0;
+while (x < 10) {
+    x++;
+}
+```
+
+### Ejercicios
+
+1. Escribe un programa que lea un número entero y determine si es par o impar.
+2. Escribe un programa que lea un número entero y determine si es positivo, negativo o cero.
+3. Escribe un programa que lea dos números enteros y determine cuál es mayor.
+4. Escribe un programa que imprima los números del 1 al 10 usando un bucle for.
+5. Escribe un programa que calcule la suma de los números del 1 al 100 usando un bucle while.
+6. Escribe un programa que determine si un número es primo o no.
+7. Escribe un programa que imprima todos los números primos entre 1 y 50.
