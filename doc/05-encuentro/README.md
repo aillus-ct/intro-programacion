@@ -263,3 +263,9 @@ do {
 5. Escribe un programa que calcule la suma de los números del 1 al 100 usando un bucle while.
 6. Escribe un programa que determine si un número es primo o no.
 7. Escribe un programa que imprima todos los números primos entre 1 y 50.
+8. Juego de adivinar el número:
+- a. Crear una función main que contenga un número en una variable.
+- b. El usuario debe adivinar el número elegido. Preguntar al usuario un número mientras no lo acierte.
+- c. Si el número es menor informar al usuario: "El número es menor, intenta de nuevo".
+- d. Si el número es mayor informar al usuario: "El número es mayor, intenta de nuevo".
+- e. Si el usuario acierta el número elegido en a. informar "Ganaste" y finalizar la aplicación.
