@@ -264,7 +264,7 @@ do {
 6. Escribe un programa que determine si un número es primo o no.
 7. Escribe un programa que imprima todos los números primos entre 1 y 50.
 8. Juego de adivinar el número:
-- a. Crear una función que contenga un número en una variable.
+- a. Crear una función main que contenga un número en una variable.
 - b. El usuario debe adivinar el número elegido. Preguntar al usuario un número mientras no lo acierte.
 - c. Si el número es menor informar al usuario: "El número es menor, intenta de nuevo".
 - d. Si el número es mayor informar al usuario: "El número es mayor, intenta de nuevo".
