@@ -1,3 +1,4 @@
+package LauraLovotti1;
 import java.util.Scanner;
 
 public class EntradaDatos{
