@@ -21,7 +21,10 @@ public class SentenciaEjercicio8 {
                     break;
         }
             contador++;
-
+/*jjs
+ * jsjsjs
+ * jdjvnjv
+ */
         } 
 
         if (contador == 3) {
