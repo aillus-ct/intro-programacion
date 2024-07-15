@@ -1,9 +1,10 @@
-package LauraLovotti;
+package LauraLovotti1;
 import java.util.Random;
 import java.util.Scanner;
 
 
 public class Pipati {
+    //piedra, papel o tijera
     public static void main(String[] args) {
         boolean jugarDeNuevo = true;
 
