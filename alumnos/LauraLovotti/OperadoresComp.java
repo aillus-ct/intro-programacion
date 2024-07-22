@@ -20,6 +20,6 @@ public class OperadoresComp {
     System.out.println("Numero 1 es menor que numero 2: " + menorQue);
     System.out.println("Numero 1 es mayor o igual que numero 2: " + mayorIgual);
     System.out.println("Numero 1 es menor o igual que numero 2: " + menorIgual);
-
+    numeros.close();
     }
 }

@@ -19,6 +19,7 @@ public class DetallesDeFactura {
         System.out.print(" tiene un total bruto de $ " + totalBruto);
         System.out.print(" con un impuesto de $ " + impuesto);
         System.out.println(" y el monto despues de impuesto es $ " + totalFactura);
+        scanner.close();
     }
 }
     

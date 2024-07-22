@@ -11,5 +11,6 @@ public class PosONeg {
         } else {
             System.out.println("El numero ingresado es cero");
         }
+        numero.close();
     }
 }

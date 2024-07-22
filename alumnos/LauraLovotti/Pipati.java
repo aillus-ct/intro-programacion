@@ -1,4 +1,4 @@
-package LauraLovotti1;
+
 import java.util.Random;
 import java.util.Scanner;
 
@@ -53,8 +53,8 @@ public class Pipati {
             if (volver.equalsIgnoreCase("No")) {
                 jugarDeNuevo = false;
             }           
-
+            scanner.close();
         }
-
+        
     }
 }

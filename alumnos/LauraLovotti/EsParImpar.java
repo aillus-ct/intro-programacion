@@ -8,5 +8,6 @@ public class EsParImpar{
 
         String resultado = (numeroing % 2 == 0) ? "Par" : "Impar";
         System.out.println ("El numero ingresado es: " + resultado);
+        numero.close();
     }
 }

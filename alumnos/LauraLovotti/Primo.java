@@ -17,6 +17,7 @@ public class Primo {
         } else {
             System.out.println(numero + " no es un número primo.");
         }
+        entrada.close();
         
     }
 }
