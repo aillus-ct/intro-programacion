@@ -8,5 +8,6 @@ public class EdadEnAñosPerro {
 
         int edadPerro = edad * 7;
         System.out.println("Su edad en años de perro es: " + edadPerro);
+        scanner.close();
     }
 }

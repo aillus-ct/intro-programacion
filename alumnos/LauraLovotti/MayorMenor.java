@@ -14,5 +14,6 @@ public class MayorMenor {
         } else {
             System.out.println("Los numeros ingresados son iguales");
         }
+        numero.close();
     }
 }

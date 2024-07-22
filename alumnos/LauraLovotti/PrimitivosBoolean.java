@@ -14,7 +14,7 @@ public class PrimitivosBoolean {
         datoLogico = d < f;
         System.out.println("dato logico: " + datoLogico);
 
-        boolean esIgual = (3-2 == 1);
+        boolean esIgual = (3 - 2 == 1);
         System.out.println("es igual: " + esIgual);
     }
 }

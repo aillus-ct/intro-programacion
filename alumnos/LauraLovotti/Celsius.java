@@ -17,5 +17,6 @@ public class Celsius {
         System.out.println("La temperatura en grados Celsius es: " + tempConv); 
 
         }
+        scanner.close();
     }
 }

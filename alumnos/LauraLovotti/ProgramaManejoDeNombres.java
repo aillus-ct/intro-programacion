@@ -14,6 +14,6 @@ public class ProgramaManejoDeNombres {
     String nombre3 = nombres.nextLine();
     String nombreMod3 = nombre3.toUpperCase().charAt(1) + "." + nombre3.substring(nombre3.length()-2);
     System.out.println(nombreMod1 + "_" + nombreMod2 + "_" + nombreMod3);
-  
+        nombres.close();
     }
 }

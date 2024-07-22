@@ -9,6 +9,6 @@ public class SistemasNumericosEntradaScanner {
         numeroDecimal = scanner.nextInt();
 
         System.out.println("numeroDecimal: " + numeroDecimal);
-
+        scanner.close();
     }
 }

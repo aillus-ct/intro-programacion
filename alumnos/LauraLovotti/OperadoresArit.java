@@ -18,5 +18,6 @@ public class OperadoresArit {
     System.out.println("El resultado de la multiplicacion es: " + producto);
     System.out.println("El resultado de la division es: " + division);
     System.out.println("El resto de la division es: " + modulo);
+    numeros.close();
     } 
 }

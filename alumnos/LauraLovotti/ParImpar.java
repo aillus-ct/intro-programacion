@@ -9,5 +9,6 @@ public class ParImpar {
         } else {
             System.out.println(numeroIng + " es un numero impar");  
         }
+        numero.close();
     }
 }
