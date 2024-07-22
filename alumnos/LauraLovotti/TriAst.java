@@ -8,8 +8,8 @@ public class TriAst {
             for (int ast = 1; ast <= linea; ast++) {
                 System.out.print("*");
             }
-        System.out.println(" ");  
+            System.out.println(" ");  
         }
-    numero.close();
+        numero.close();
     }
 }
