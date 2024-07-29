@@ -8,6 +8,8 @@
 ### [Encuentro 4](doc/04-encuentro/README.md)
 ### [Encuentro 5](doc/05-encuentro/README.md)
 ### [Encuentro 8](doc/08-encuentro/README.md)
+### [Encuentro 9](doc/09-encuentro/README.md)
+
 
 ### Links:
 
