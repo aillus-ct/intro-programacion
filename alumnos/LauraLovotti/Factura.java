@@ -1,10 +1,10 @@
 public class Factura {
-    private String nombreEmpresa;
-    private String cuitEmpresa;
-    private int numFactura;
-    private char tipoFactura;
-    private String fechaFactura;
-    private RenglonFact renglon;
-    private ClienteFact cliente;
-    private double totalFactura = 0;
+    String nombreEmpresa;
+    String cuitEmpresa;
+    int numFactura;
+    char tipoFactura;
+    String fechaFactura;
+    RenglonFact[] renglones = new RenglonFact[10];
+    ClienteFact cliente;
+    double totalFactura;
 }

@@ -1,6 +1,6 @@
 public class ClienteFact{
-    private String nombreCliente;
-    private String cuitCliente;
-    private String condIvaCliente;
-    private String domicCliente;
+    String nombreCliente;
+    String cuitCliente;
+    String condIvaCliente;
+    String domicCliente;
 }
