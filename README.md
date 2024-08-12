@@ -9,6 +9,10 @@
 ### [Encuentro 5](doc/05-encuentro/README.md)
 ### [Encuentro 8](doc/08-encuentro/README.md)
 ### [Encuentro 9](doc/09-encuentro/README.md)
+### [Encuentro 10](doc/09-encuentro/README.md)
+### [Encuentro 12](doc/12-encuentro/README.md)
+
+
 
 
 ### Links:
