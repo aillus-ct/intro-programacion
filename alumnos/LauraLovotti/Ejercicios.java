@@ -48,7 +48,7 @@ public class Ejercicios {
      }
     // llamador de funciones
         public static void main(String[] args) {
-        Scanner numero = new Scanner(System.in);
+        Scanner numero = new Scanner(System.in); 
         System.out.println("ingrese un numero: ");
         int numeroIng1 = numero.nextInt();
         System.out.println("ingrese otro numero: ");
