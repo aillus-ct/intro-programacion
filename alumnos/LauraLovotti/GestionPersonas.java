@@ -1,4 +1,4 @@
-import java.util.Scanner;
+ import java.util.Scanner;
 public class GestionPersonas {
     public static void main (String [] args){
         
@@ -32,16 +32,21 @@ public class GestionPersonas {
             if (persona[cont].getEdad() > personaMayor.getEdad()){
               personaMayor = persona[cont];
             }
-         System.out.println("La persona de mayor edad es: " + personaMayor.getNombre());   
-      }Persona2 personaMenor = persona[0];
+          }
+         System.out.println("La persona de mayor edad es: " + personaMayor.getNombreEdad());   
+      
+      Persona2 personaMenor = persona[0];
         for (int cont = 1; cont < indice ; cont++){
             if (persona[cont].getEdad() < personaMenor.getEdad()){
               personaMenor = persona[cont];
             }
-         System.out.println("La persona de menor edad es: " + personaMenor.getNombre()); 
-     }
+          }
+         System.out.println("La persona de menor edad es: " + personaMenor.getNombreEdad()); 
+     scanner.close();
   }
+  
 }
+
 //String decision = "S";
       //while (decision.equalsIgnoreCase("S")){
         //System.out.println("Desea ingresar otra persona?? (S/N)");

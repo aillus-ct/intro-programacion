@@ -15,7 +15,7 @@ public class CuentaBancaria {
 
     public double getSaldo() {
         return this.saldo;
-    }
+    } 
 
     public String getTitular() {
         return this.titular;

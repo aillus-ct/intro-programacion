@@ -11,7 +11,7 @@ public class Persona2 {
     }
 
     public void setEdad(int edad){
-        this.edad = edad;
+        this.edad = edad; 
     }
 
     public String getNombre(){
@@ -22,7 +22,7 @@ public class Persona2 {
         return this.edad;
     }
 
-    public void imprimeNombreEdad(){
-        System.out.println(this.nombre + this.edad);
+    public String getNombreEdad(){
+        return this.nombre + this.edad;
     }
 }

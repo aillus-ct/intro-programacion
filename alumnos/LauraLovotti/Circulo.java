@@ -9,7 +9,7 @@ public class Circulo {
         this.radio = radio;
     }
 
-    public double getRadio(){
+    public double getRadio(){ 
         return this.radio;
     }
 

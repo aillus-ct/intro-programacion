@@ -3,4 +3,4 @@ public class ClienteFact{
     String cuitCliente;
     String condIvaCliente;
     String domicCliente;
-}
+} 
