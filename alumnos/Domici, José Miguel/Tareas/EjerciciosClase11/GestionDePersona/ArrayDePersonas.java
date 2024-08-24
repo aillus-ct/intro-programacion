@@ -27,28 +27,28 @@ public class ArrayDePersonas {
         System.out.println();
 
         int suma = 0;
+        Personas personaMayor = personas.get(0);
+        Personas personaMenor = personas.get(0);
+    
         for (Personas persona : personas) {
+
             suma += persona.getEdad();
+
+            if (persona.getEdad() > personaMayor.getEdad()) {
+                    personaMayor = persona;
+            }
+            
+              
+            if (persona.getEdad() < personaMenor.getEdad()) {
+                    personaMenor = persona;
+            }
+
         }
+
         int length = personas.size();
         double promedio = suma / length;
-        System.out.println("El promedio de edad es de: " + promedio);
 
-        Personas personaMayor = personas.get(0);
-        for (Personas persona : personas) {
-            if (persona.getEdad() > personaMayor.getEdad()) {
-                personaMayor = persona;
-            }
-        }
-        System.out.println("La persona mayor es: " + personaMayor.getNombre());
-        
-        Personas personaMenor = personas.get(0);
-        for (Personas persona : personas) {
-            if (persona.getEdad() < personaMenor.getEdad()) {
-                personaMenor = persona;
-            }
-        }
-        System.out.println("La persona menor es: " + personaMenor.getNombre());
+        System.out.println("El promedio de edad es de: " + promedio + "\nLa persona mayor es: " + personaMayor.getNombre() + " Con: " + personaMayor.getEdad() + "\nLa persona menor es: " + personaMenor.getNombre() + " Con: " + personaMenor.getEdad()); 
 
         scanner.close();
     }

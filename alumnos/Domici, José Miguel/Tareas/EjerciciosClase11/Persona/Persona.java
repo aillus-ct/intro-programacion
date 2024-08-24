@@ -1,9 +1,9 @@
 public class Persona {
 
     // Declaramos variables
-    private String nombre;
-    private int edad;
-    private String genero;
+    String nombre;
+    int edad;
+    String genero;
 
     //Declaramos el constructor de la clase
     public Persona (String nombre, int edad, String genero) {
