@@ -27,6 +27,7 @@ public static void main(String[] args) {
         
         
         System.out.println(resultado);
+        
     } else {
         System.out.println("Cada palabra debe tener al menos dos caracteres.");
     }
