@@ -10,6 +10,7 @@ public class PiedraPapelOTijera {
         Random random = new Random ();
         int opcionComputadora = random.nextInt(3); 
         String eleccionComputadora;
+
         if (opcionComputadora == 0)  {
         eleccionComputadora = "Piedra";
         } else if (opcionComputadora == 1) {
@@ -18,34 +19,29 @@ public class PiedraPapelOTijera {
         eleccionComputadora = "Tijera";
         }
         System.out.println("La computadora eligio: " + eleccionComputadora);
-        int comparacion = 3;
-       
-
-if (0 > 2) {
-    System.out.println("La Piedra vence a la Tijera");
-} else if (1 < 2) {
-    System.out.println("La Tijera vence al Papel");
-} else {
-    System.out.println("El Papel vence a la Piedra");
-}
-
-switch (comparacion) {
-    String opcion;
-    case 1: (opcion == eleccionComputadora);
-        System.out.println("Empate");
-        break;
-    case 2: (opcion = 0 && eleccionComputadora == 2) ||
-    (opcion = 1 && eleccionComputadora == 0) ||
-    (opcion = 2 && eleccionComputadora == 1);
-        System.out.println("El usuario gana");
-        break;
-    default:
-        System.out.println("La computadora gana");
-        break;
-}
-System.out.println(resultado);
-    } 
+        
+        String resultado = "";
+        int contador = 1;
+        while (opcion != eleccionComputadora && contador <= 5){
+            if (opcion.equalsIgnoreCase(eleccionComputadora)) {
+                resultado = "Empate";
+            } else if ((opcion.equalsIgnoreCase("Piedra") && eleccionComputadora.equalsIgnoreCase("Tijera")) 
+                    || (opcion.equalsIgnoreCase("Papel") && eleccionComputadora.equalsIgnoreCase("Piedra"))
+                    || (opcion.equalsIgnoreCase("Tijera")) && eleccionComputadora.equalsIgnoreCase("Papel")) {
+                resultado = "El usuario gana";
+            } else {
+                resultado = "La computadora gana";
+                }
+                contador++;
+        }
+        
+        System.out.println(resultado);
+        entrada.close();
+    }
 } 
+
+
+
         
 
 
