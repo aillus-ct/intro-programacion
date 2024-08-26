@@ -1,0 +1,9 @@
+{
+    "githubPullRequests.ignoredPullRequestBranches": [
+        "main"
+    ],
+    "java.project.sourcePaths": [
+        "alumnos/LautaroLiberti",
+        "alumnos"
+    ]
+}
