@@ -20,7 +20,7 @@ public class Estudiante extends Persona2{
     }
     public String getGrado(){
         return this.grado;
-    }
+    } 
 
     public void mostrarInformacion(){
         System.out.println("El estudiante: " + this.nombre + " tiene " + this.edad + " años, concurre al grado " + this.grado +

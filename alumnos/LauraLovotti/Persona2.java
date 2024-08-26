@@ -1,4 +1,4 @@
-public class Persona2 {
+abstract public class Persona2 {
     String nombre;
     int edad;
 
@@ -21,8 +21,8 @@ public class Persona2 {
     public int getEdad(){
         return this.edad;
     }
-
+    abstract void mostrarInformacion();
     public String getNombreEdad(){
         return this.nombre + this.edad;
-    }
+    } 
 }

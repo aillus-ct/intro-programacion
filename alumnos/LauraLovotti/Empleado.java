@@ -20,11 +20,11 @@ public class Empleado extends Persona2{
     }
     public String getPuesto(){
         return this.puesto;
-    }
+    }  
 
     public void mostrarInformacion(){
         System.out.println("El empleado: " + this.nombre + " tiene " + this.edad + " años trabaja en el puesto de " + this.puesto +
-         " y tiene un salario de $ " + this.salario);
+         " y tiene un salario de $ " + this.salario + " " + this.getClass().getName());
     }
 
 }
