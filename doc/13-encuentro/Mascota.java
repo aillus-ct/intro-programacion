@@ -1,4 +1,6 @@
-public class Mascota {
+import javafx.stage.StageStyle;
+
+abstract public class Mascota {
     String nombre;
     int edad;
     String raza;
@@ -14,27 +16,18 @@ public class Mascota {
         this.tieneHambre = false;
         this.energia = 10;
     }
+
+    public void saludar(){
+        System.out.println("Soy un mascota");
+    }
+
+    public void mostrarEnergia(){
+        System.out.print("Mi nombre es: " + this.nombre + " ");
+        System.out.println("Mi energia es: " + this.energia);
+    }
     
-    public void comer(){
-        this.tieneHambre = false;
-    }
-
-    public void moverse(){
-        if(this.energia > 0){
-            this.energia--;
-        } else {
-            System.out.println("Necesito descansar para poder moverme");
-        }
-    }
-
-    public void descansar(){
-        if(this.energia < 10){
-            this.energia++;
-        } else {
-            System.out.println("No necesito descansar");
-        }
-    }
+    abstract public void comer();
+    abstract public void moverse();
+    abstract public void descansar();
 
 }
-
-

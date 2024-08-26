@@ -13,4 +13,17 @@ public class Pez extends Mascota{
         System.out.println("gluglu");
     }
 
+    public void moverse(){
+        this.energia -= 5;
+    }
+    
+    public void comer() {
+        this.tieneHambre = false;
+        this.energia += 1;
+    }
+
+    public void descansar(){ 
+        this.energia += 10;
+    }
+
 }
