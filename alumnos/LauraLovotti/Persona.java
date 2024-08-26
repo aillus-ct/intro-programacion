@@ -4,7 +4,7 @@ public class Persona {
     private String nombre;
     private int edad;
     private String genero;
-
+ 
     //Declaramos el constructor de la clase
     public Persona (String nombre, int edad, String genero) {
         this.nombre = nombre;

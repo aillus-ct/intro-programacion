@@ -7,4 +7,4 @@ public class Factura {
     RenglonFact[] renglones = new RenglonFact[10];
     ClienteFact cliente;
     double totalFactura;
-}
+} 

@@ -9,7 +9,7 @@ public class EjemploFact {
         
         RenglonFact renglon = new RenglonFact();
         renglon.codArt = 1;
-        renglon.descArt = "televisor";
+        renglon.descArt = "televisor"; 
         renglon.cantArt = 2;
         renglon.precioInd = 12.8;
         renglon.totalRenglon = 25.6;

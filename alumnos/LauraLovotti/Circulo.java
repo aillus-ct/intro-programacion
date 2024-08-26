@@ -1,5 +1,5 @@
 public class Circulo {
-    private double radio;
+    double radio;
 
     public Circulo (double radio) {
         this.radio = radio;
