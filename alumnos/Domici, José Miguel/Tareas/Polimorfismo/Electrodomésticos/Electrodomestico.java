@@ -1,8 +1,7 @@
-public class Electrodomestico {
+abstract public class Electrodomestico {
     
     public Electrodomestico(){
     }
 
-    public void funcionar(){
-    }
+    abstract public void funcionar();
 }

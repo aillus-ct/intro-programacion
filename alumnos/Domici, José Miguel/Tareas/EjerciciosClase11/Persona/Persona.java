@@ -12,6 +12,11 @@ public class Persona {
         this.genero = genero;
     }
 
+    public Persona(String nombre, int edad){
+        this.nombre = nombre;
+        this.edad = edad;
+    }
+
 
     // Declaramos los metodos get y set de cada atributo
     public void setNombre(String nombre){

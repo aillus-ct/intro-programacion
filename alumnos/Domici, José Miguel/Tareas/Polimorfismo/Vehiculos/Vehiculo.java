@@ -1,4 +1,4 @@
-public class Vehiculo {
+abstract public class Vehiculo {
     String marca;
     String modelo;
     int año;
@@ -9,6 +9,5 @@ public class Vehiculo {
         this.año = año;
     }
 
-    public void mover(){
-    }
+    abstract public void mover();
 }
