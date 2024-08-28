@@ -1,8 +1,7 @@
-public class Empleado {
+abstract public class Empleado {
     
     public Empleado(){
     }
 
-    public void calcularSalario(){
-    }
+    abstract public void calcularSalario();
 }

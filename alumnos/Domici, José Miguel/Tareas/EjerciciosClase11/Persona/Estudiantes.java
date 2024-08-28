@@ -4,7 +4,7 @@ public class Estudiantes extends Persona {
     private double promedio;
 
     public Estudiantes(String nombre, int edad, String grado, double promedio){
-        super(nombre, edad, grado);
+        super(nombre, edad);
         this.grado = grado;
         this.promedio = promedio;
     }
