@@ -1,4 +1,4 @@
-public class PersonaDosEjemplo {
+public class PersonaEjemplo {
     public static void main(String[] args) {
         Persona persona1 = new Persona("Pepito", 18, "Masculino");
 
