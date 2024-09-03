@@ -1,3 +1,5 @@
+import HerenciaCirculo.Circulo;
+
 public class CirculoEjemplo {
     
     public static void main(String[] args) {

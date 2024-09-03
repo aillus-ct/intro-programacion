@@ -1,15 +1,18 @@
+package HerenciaPersona;
 public class PersonaDos {
     
     // declaro variables
     String nombre;
     int edad;
-
+    
     // constructor
     public PersonaDos(String nombre, int edad) {
         this.nombre = nombre;
         this.edad = edad;
     }
     
+
+
     // get y set
     public void setNombre(String nombre){
         this.nombre = nombre;
@@ -39,7 +42,11 @@ public class PersonaDos {
         }
         */
     }
-    
+    public void mostrarInformacion(){
+        System.out.println("Se llama " + this.nombre + " y tiene " + this.edad + " años ");
+    }
+
+
     }
     
 

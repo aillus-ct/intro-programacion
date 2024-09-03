@@ -1,4 +1,5 @@
-public class Circulo {
+package HerenciaCirculo;
+public class Circulo { 
     // Declaro variables
     private double radio;
 
@@ -28,7 +29,7 @@ public class Circulo {
         System.out.println("Datos del circulo: ");
         System.out.println("El radio del circulo es: " + this.radio + "\nEl area del circulo es " + calcularArea() + "\nLa circunferencia del circulo es " + calcularCircunferencia());
 
-    }
+    } 
 }
 
 
