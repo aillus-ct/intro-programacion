@@ -26,7 +26,6 @@ Además de las bases de datos relacionales, existen otros tipos de sistemas de g
 
 
 ![Modelo entidad relación](./imagenes/modelo-entidad-relacion.svg)
-<img src="./imagenes/modelo-entidad-relacion.svg" alt="Modelo entidad relación" />
 
 
 ## SQL y las bases de datos relacionales
