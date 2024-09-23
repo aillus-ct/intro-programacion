@@ -24,6 +24,8 @@ Además de las bases de datos relacionales, existen otros tipos de sistemas de g
 - **Bases de datos de series temporales**: Optimizadas para almacenar y consultar datos con marca de tiempo. Ejemplos: InfluxDB, TimescaleDB.
 - **Bases de datos de objetos**: Modelan los datos como objetos, en lugar de tablas. Ejemplos: db4o, Versant.
 
+
+
 ## SQL y las bases de datos relacionales
 
 SQL (Structured Query Language) es el lenguaje de programación estándar utilizado para administrar y manipular bases de datos relacionales. SQL consta de varios componentes clave:
@@ -139,3 +141,9 @@ Estos clientes pueden ser útiles para explorar y depurar tu base de datos duran
 3. Elimina un usuario de la tabla.
 4. Consulta todos los usuarios cuya edad sea mayor a 25 años.
 5. Consulta los nombres y correos de los usuarios cuya edad esté entre 20 y 40 años.
+
+## Más ejercicios
+
+https://www.w3schools.com/sql/exercise.asp
+
+## Entorno de pruebas en línea
