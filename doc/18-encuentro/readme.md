@@ -149,3 +149,54 @@ Estos clientes pueden ser útiles para explorar y depurar tu base de datos duran
 https://www.w3schools.com/sql/exercise.asp
 
 ## Entorno de pruebas en línea
+
+https://www.programiz.com/sql/online-compiler/
+
+```sql
+CREATE TABLE clientes (
+  id INT PRIMARY KEY,
+  nombre VARCHAR(50),
+  apellido VARCHAR(50),
+  edad INT,
+  pais VARCHAR(50)
+);
+
+-- Insertar datos en la tabla Clientes
+INSERT INTO clientes (id, nombre, apellido, edad, pais) VALUES
+(1, 'Aníbal', 'Matellán', 31, 'AR'),
+(2, 'Martina', 'Chapanay', 22, 'URU'),
+(3, 'Segundo David', 'Peralta', 22, 'CHI'),
+(4, 'María Remedios', 'Valle', 25, 'BRA'),
+(5, 'Manuela', 'Sáenz', 28, 'ECU');
+
+CREATE TABLE pedidos (
+  id INT PRIMARY KEY,
+  articulo VARCHAR(100),
+  monto DECIMAL(10, 2),
+  id_cliente INT,
+  FOREIGN KEY (id_cliente) REFERENCES clientes(id)
+);
+
+-- Insertar datos en la tabla Pedidos
+INSERT INTO pedidos (id, articulo, monto, id_cliente) VALUES
+(1, 'Teclado', 400, 4),
+(2, 'Mouse', 300, 4),
+(3, 'Monitor', 12000, 3),
+(4, 'Teclado', 400, 1),
+(5, 'Disco SSD', 250, 2);
+
+CREATE TABLE envios (
+  id INT PRIMARY KEY,
+  estado VARCHAR(50),
+  id_pedido INT,
+  FOREIGN KEY (id_pedido) REFERENCES pedidos(id)
+);
+
+-- Insertar datos en la tabla Envios
+INSERT INTO envios (id, estado, id_pedido) VALUES
+(1, 'Pendiente', 2),
+(2, 'Pendiente', 4),
+(3, 'Entregado', 3),
+(4, 'Pendiente', 5),
+(5, 'Entregado', 1);
+```
