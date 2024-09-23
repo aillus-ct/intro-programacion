@@ -152,6 +152,8 @@ https://www.w3schools.com/sql/exercise.asp
 
 https://www.programiz.com/sql/online-compiler/
 
+https://onecompiler.com/mysql
+
 ```sql
 CREATE TABLE clientes (
   id INT PRIMARY KEY,
