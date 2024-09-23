@@ -25,6 +25,9 @@ Además de las bases de datos relacionales, existen otros tipos de sistemas de g
 - **Bases de datos de objetos**: Modelan los datos como objetos, en lugar de tablas. Ejemplos: db4o, Versant.
 
 
+![Modelo entidad relación](./imagenes/modelo-entidad-relacion.svg)
+<img src="./imagenes/modelo-entidad-relacion.svg" alt="Modelo entidad relación" />
+
 
 ## SQL y las bases de datos relacionales
 
