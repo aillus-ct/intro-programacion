@@ -176,6 +176,34 @@ INSERT INTO proyectos (id, nombre_proyecto, id_empleado) VALUES
 
 ## JOINs
 
+### CROSS JOIN
+Realiza un producto cartesiano entre dos tablas, combinando cada fila de la primera tabla con cada fila de la segunda tabla.
+
+```sql
+SELECT e.nombre, d.nombre_departamento
+FROM empleados e
+CROSS JOIN departamentos d;
+```
+
+## Producto Cartesiano
+
+El producto cartesiano en el contexto de bases de datos se refiere a la combinación de cada fila de una tabla con cada fila de otra tabla. Esto resulta en un conjunto de datos que contiene todas las posibles combinaciones de filas entre las dos tablas.
+
+Características del producto cartesiano:
+1. El número de filas resultantes es el producto del número de filas de ambas tablas.
+2. Puede generar conjuntos de datos muy grandes rápidamente.
+3. A menudo se usa como base para otros tipos de JOIN, aplicando luego condiciones de filtrado.
+4. En SQL, se puede lograr mediante CROSS JOIN o simplemente listando las tablas en la cláusula FROM sin condición de JOIN.
+
+Ejemplo de producto cartesiano:
+
+```sql
+SELECT *
+FROM tabla1, tabla2;
+```
+
+Es importante usar el producto cartesiano con precaución, ya que puede producir conjuntos de resultados muy grandes y consumir muchos recursos del sistema, especialmente con tablas grandes.
+
 ### INNER JOIN
 Devuelve registros cuando hay coincidencias en ambas tablas.
 
