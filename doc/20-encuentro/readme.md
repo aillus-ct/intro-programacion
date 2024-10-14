@@ -48,7 +48,7 @@ Los bloqueos son mecanismos utilizados por el sistema de gestión de bases de da
 #### Ejemplo de Uso de Bloqueos:
 
 ```sql
-BEGIN TRANSACTION;
+START TRANSACTION;
 
 -- Adquiere un bloqueo exclusivo en la tabla 'Cuentas'
 LOCK TABLE Cuentas IN EXCLUSIVE MODE;
@@ -67,7 +67,7 @@ COMMIT;
 Imaginemos una transferencia de dinero entre dos cuentas bancarias.
 
 ```sql
-BEGIN TRANSACTION;
+START TRANSACTION;
 
 UPDATE Cuentas SET saldo = saldo - 1000 WHERE id_cuenta = 1;
 UPDATE Cuentas SET saldo = saldo + 1000 WHERE id_cuenta = 2;
@@ -84,7 +84,7 @@ ROLLBACK;
 Supongamos que estamos insertando un nuevo pedido y sus detalles.
 
 ```sql
-BEGIN TRANSACTION;
+START TRANSACTION;
 
 INSERT INTO Pedidos (id_cliente, fecha) VALUES (1, '2024-10-07');
 INSERT INTO DetallesPedido (id_pedido, id_producto, cantidad) VALUES (LAST_INSERT_ID(), 101, 5);
