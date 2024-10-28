@@ -156,7 +156,7 @@ https://onecompiler.com/mysql
 
 ```sql
 CREATE TABLE clientes (
-  id INT PRIMARY KEY,
+  id INT PRIMARY AUTO_INCREMENT KEY,
   nombre VARCHAR(50),
   apellido VARCHAR(50),
   edad INT,
