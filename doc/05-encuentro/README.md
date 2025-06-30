@@ -252,6 +252,33 @@ do {
     System.out.println(x);
     x++;
 } while (x < 5);
+
+// Ejemplo
+Scanner sc = new Scanner(System.in);
+int opcion;
+do {
+    System.out.println( "Ingrese una opcion:");
+    System.out.println("1. Ingrese un nuevo cliente");
+    System.out.println("2. Facturar");
+    System.out.println("3. Opcion Salir");
+    opcion = sc.nextInt();
+    sc.nextLine(); // Limpiar el buffer del scanner
+
+    switch (opcion) {
+        case 1:
+            System.out.println("Opcion 1 seleccionada");
+            break;
+        case 2:
+            System.out.println("Opcion 2 seleccionada");
+            break;
+        case 3:
+            System.out.println("Saliendo del programa...");
+            break;    
+        default:
+            System.out.println("Opcion no valida, intente de nuevo.");
+            break;
+    }
+} while (opcion != 3);
 ```
 
 ### Ejercicios
