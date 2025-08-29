@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mi primera web con JavaScript</title>
+  <link rel="stylesheet" type="text/css" href="estilo.css">
+  <meta charset="UTF-8">
+
+</head>
+<body>
+
+  <h1 id="titulo">¡Hola, mundo!</h1>
+
+  <button class="button" onclick="cambiarTexto()">Haz clic para cambiar el texto</button>
+  <input id="campoTexto"  type="text"/>
+  <button onclick="agregarTexto()"> Agregar texto </button>
+  
+
+
+  
+
+  <script>
+    let indiceTexto = 0;
+    const listaTextos = ["Hola Grupo", "Hola Mundo","Hola Guillermo"];
+    document.getElementById("titulo").innerText = listaTextos[0]; 
+
+    function  cambiarTexto() {
+      const longitudListaTexto = listaTextos.length;
+      
+
+      /*
+      indiceTexto += 1;
+      if (indiceTexto > 2) {
+        indiceTexto = 0;
+      } 
+     */
+      //indiceTexto = indiceTexto <2 ? indiceTexto +1 : 0;
+      //indiceTexto = indiceTexto <longitudListaTexto -1 ? indiceTexto +1 : 0;
+      indiceTexto = Math.floor( Math.random() * longitudListaTexto);
+      document.getElementById("titulo").innerText = listaTextos[indiceTexto];
+      document.getElementById("titulo").style.color = "blue";
+      
+    }  
+    
+    function agregarTexto() {
+     const valorCampo =  document.getElementById("campoTexto").value; 
+     listaTextos.push(valorCampo);
+     
+    }
+
+  </script>
+
+</body>
+</html>

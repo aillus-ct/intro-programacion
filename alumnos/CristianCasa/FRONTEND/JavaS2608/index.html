@@ -1,0 +1,39 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <div>
+        <h1>Mi pagina para cargar datos</h1>
+        <p>Bienvenido a mi pagina. Aquí puedes agregar y limpiar mensajes.</p>
+    </div>
+
+    <div class="contenedor"></div>
+    <input type="text" class="miInput">
+    <button type="button" class="miBoton">Agregar mensaje</button>
+    <button type="button" class="miBotonLimpiar">Limpiar mensajes</button>
+
+    <script>
+        const contenedor = document.querySelector('.contenedor');
+        const input = document.querySelector('.miInput');
+        const boton = document.querySelector('.miBoton');
+        const botonLimpiar = document.querySelector('.miBotonLimpiar');
+
+        boton.addEventListener('click', () => {
+            const mensaje = input.value;
+            const parrafo = document.createElement('p');
+            parrafo.textContent = mensaje;
+            contenedor.appendChild(parrafo);
+            input.value = '';
+        });
+
+        botonLimpiar.addEventListener('click', () => {
+            contenedor.innerHTML = '';
+        });
+    </script>
+
+</body>
+</html>

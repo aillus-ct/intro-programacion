@@ -1,0 +1,42 @@
+/* Asegura que html y body ocupen toda la pantalla */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Centramos todo el contenido del body */
+body {
+  display: flex;                /* Activamos Flexbox */
+  justify-content: center;      /* Centramos horizontalmente */
+  align-items: center;          /* Centramos verticalmente */
+  background-color: #f0f0f4;
+}
+
+/* Estilo del formulario */
+.formulario {
+  display: flex;
+  flex-direction: column;       /* Ordenamos los campos en columna */
+  gap: 15px;                    /* Espacio entre campos */
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  width: 300px;
+}
+
+.formulario input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.formulario button {
+  padding: 10px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}

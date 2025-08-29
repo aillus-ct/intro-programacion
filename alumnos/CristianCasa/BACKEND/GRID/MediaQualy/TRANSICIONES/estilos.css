@@ -1,0 +1,152 @@
+/* Definir la animación */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Aplicar las animaciones */
+.fade-in {
+  animation: fadeInUp 1.8s ease-out 0.2s forwards;
+}
+
+.pulso {
+  animation: pulse .8s infinite;
+}
+
+.spinner {
+  animation: rotate 1s linear infinite;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  width: 100%;
+}
+
+/* Animación compleja */
+.card-animada {
+  /* nombre duración timing-function delay fill-mode */
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+  transform: translateY(0);
+  transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+  min-height: 100px;
+}
+
+.card-animada::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+  transition: left 0.6s;
+}
+
+.card-animada:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+}
+
+.card-animada:hover::before {
+  left: 100%;
+}
+
+.card-animada h3 {
+  margin: 0 0 15px 0;
+  font-size: 24px;
+  transform: translateX(0);
+  transition: transform 0.3s ease;
+}
+
+.card-animada:hover h3 {
+  transform: translateX(10px);
+}
+
+.card-animada p {
+  font-size: 16px;
+  line-height: 1.5;
+  opacity: 0.9;
+  margin-bottom: 20px;
+}
+
+.card-animada .precio {
+  font-size: 28px;
+  font-weight: bold;
+  color: #ffd700;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+.spinnerContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.spinnerDiv {
+  width: 40px;
+  height: 40px;
+  border: 10px solid rgba(0, 0, 0, 0.3);
+  border-top-color: #3498db;
+  border-radius: 50%;
+}
+
+
+.boton {
+    background-color: #3498db;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+
+    /* Múltiples propiedades */
+    transition: background-color 1.8s ease, transform 2.8s ease, box-shadow 3.8s ease;
+}
+
+.boton:hover {
+    background-color: #9e1919;
+    box-shadow: 0 4px 8px rgba(0,0,0,1);
+    transform: translateX(24px);
+}
+
+.boton:active {
+    background-color: #3498db;
+    transform: translateX(0);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.9);
+}
