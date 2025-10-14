@@ -1,0 +1,65 @@
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Juegos Historicos</title>
+  </head>
+
+  <body>
+    <div class="Juegos-dots"></div>
+    <header>
+      <h1 class="title">JUEGOS HISTORICOS</h1>
+      <nav>
+        <ul>
+          <li>
+            <a class="Inicio" href="index.html">Inicio</a>
+          </li>
+          <li>
+            <a class="Juegos" href="juegos.html">Juegos</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div class="Contenido">
+      <main>
+        <div class="juegos-grid" id="juegosGrid">
+          <!-- Los juegos se generaran con JavaScript -->
+        </div>
+      </main>
+
+      <aside>
+        <div class="buscador">
+          <input
+            type="text"
+            id="buscadorInput"
+            placeholder="Buscar juego por nombre"
+          />
+        </div>
+        <div class="add-juegos">
+          <h3>Agrega un nuevo Juego</h3>
+          <input type="text" id="nuevoJuego" placeholder="Nombre del juego" />
+          <input
+            type="text"
+            id="nuevoJuegoDescripcion"
+            placeholder="Descripción del juego"
+          />
+          <input
+            type="text"
+            id="nuevoJuegoImagen"
+            placeholder="URL de la imagen"
+          />
+          <input
+            type="text"
+            id="nuevoJuegoGenero"
+            placeholder="Género del juego"
+          />
+          <button id="agregarJuegoBtn">Agrega tu juego Favorito</button>
+        </div>
+      </aside>
+      <footer>
+        <p>&copy; 2025 Juegos Clasicos. Todos los derechos reservados.</p>
+      </footer>
+    </div>
+  </body>
+</html>

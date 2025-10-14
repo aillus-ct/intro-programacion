@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Heroes</title>
+  </head>
+  <body>
+    <form id="nuevoHeroes">
+      <input type="text" id="nombre" placeholder="Nombre del héroe" />
+      <input type="text" id="descripcion" placeholder="Descripción del héroe" />
+      <input type="text" id="genero" placeholder="Género del héroe" />
+      <button type="submit">Agregar Héroe</button>
+    </form>
+    <script>
+      const formulario = document.getElementById("nuevoHeroes");
+      const expRegPass = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,20}$/;
+      formulario.addEventListener("submit", function (event) {
+        event.preventDefault();
+        const nombre = document.getElementById("nombre").value;
+        const descripcion = document.getElementById("descripcion").value;
+        const genero = document.getElementById("genero").value;
+
+        if (nombre.length < 3) {
+          alert("El nombre debe tener al menos 3 caracteres.");
+          return;
+        }
+
+        if (descripcion.length < 5) {
+          alert("La descripción debe tener al menos 5 caracteres.");
+          return;
+        }
+
+        if (!validarGenero(genero)) {
+          return;
+        }
+
+        alert("Héroe agregado exitosamente.");
+        formulario.reset();
+      });
+
+      function validarGenero(genero) {
+        const generosValidos = ["SuperHeroe", "Masculino", "Otro"];
+        if (!generosValidos.includes(genero)) {
+          alert("Género no válido. Por favor, elige un género válido.");
+          return false;
+        }
+        console.log("Género válido");
+        return true;
+      }
+    </script>
+  </body>
+</html>
