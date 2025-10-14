@@ -1,0 +1,25 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mensajes</title>
+    <script>
+        function manejarEnviarMensaje() {
+            const textoMensaje = document.getElementById('inputMensaje').value;
+            if (textoMensaje.trim() !== '') {
+                console.log(textoMensaje);
+            }
+        }
+    </script>
+</head>
+<body>
+    <div>
+        <h1>Cargar Mensajes</h1>
+        <input type="text" id="inputMensaje">
+        <button onclick="manejarEnviarMensaje()">Enviar</button>
+    </div>
+</body>
+</html>
+    
+</body>
+</html>

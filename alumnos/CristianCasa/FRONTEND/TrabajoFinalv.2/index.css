@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+header {
+  color: rgb(61, 22, 22);
+  padding: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  position: relative;
+  border-bottom: 4px solid var(--border-color);
+  text-align: center;
+}
+body {
+  min-height: 1vh;
+  padding: 0;
+  margin: 0;
+
+  font-family: "Montserrat", sans-serif;
+  --blue: #1e3a8a;
+
+  --bkg: #5eb3fd;
+  --white: #e7e6e6;
+
+  /* Imagen de fondo */
+  background-color: var(--white);
+  background-image: url("https://www.transparenttextures.com/patterns/concrete-wall.png");
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+}
+nav ul li {
+  margin: 0 15px;
+}
+nav ul li a {
+  color: rgb(54, 23, 80);
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 20px;
+  transition: all 0.3s;
+  background-color: var(--secondary-color);
+  border: 2px solid var(--border-color);
+  box-shadow: 3px 3px 0 var(--border-color);
+  font-weight: bold;
+  display: inline-block;
+}
+.container {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 1.5rem;
+  box-shadow: 0 4px 8px -4px rgba(0, 0, 0, 0.2);
+  position: relative;
+  border-bottom: 4px solid var(--border-color);
+  text-align: center;
+}
+
+main {
+  flex: 1;
+}
+
+aside {
+  width: 300px;
+  background-color: var(--card-color);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 6px 6px 0 var(--border-color);
+  border: 3px solid var(--border-color);
+  position: relative;
+}
+
+aside::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  right: -10px;
+  bottom: -10px;
+  border: 2px dashed var(--accent-color);
+  border-radius: 12px;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.juegos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 25px;
+}
+
+.title {
+  /* Estilo del título JUEGOS CLASICOS */
+  color: black;
+  position: relative;
+  width: 100%;
+  text-align: center;
+  margin: 25px 0;
+  font-size: 3rem;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+.title h1 {
+  font-size: 4vw; /* se ajusta según ancho de pantalla */
+  z-index: 2;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  background-color: var(--primary-color);
+  color: rgb(0, 0, 0);
+  border-top: 4px solid var(--border-color);
+}

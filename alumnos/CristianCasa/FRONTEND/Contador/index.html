@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>Contador</title>
+  </head>
+  <body>
+    <main>
+      <button id="continuarButton" onclick="continuarContador()">
+        Continuar Contador
+      </button>
+      <button id="pararButton" onclick="pararContador()">Parar Contador</button>
+      <button id="resetButton" onclick="resetContador()">
+        Resetear Contador
+      </button>
+      <div id="contadorDisplay">10</div>
+    </main>
+    <script>
+      let segundos = 10;
+      let intervalo = null;
+      let corriendo = false;
+
+      const contadorDisplay = document.getElementById("contadorDisplay");
+
+      function actualizarDisplay() {
+        contadorDisplay.textContent = segundos;
+      }
+
+      function continuarContador() {
+        corriendo = true;
+        intervalo = setInterval(function () {
+          segundos--;
+          actualizarDisplay();
+        }, 1000);
+      }
+
+      function pararContador() {
+        clearInterval(intervalo);
+      }
+
+      function resetContador() {
+        pararContador();
+        segundos = 10;
+        actualizarDisplay();
+      }
+    </script>
+  </body>
+</html>
