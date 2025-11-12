@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>Lista de tareas</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+</head>
+<body> 
+</body>
+<script>
+    const params = new URLSearchParams(window.location.search);
+    const nombre = params.get('nombre');
+    if (nombre) {
+        window.alert(`¡Hola, ${nombre}!`) ;
+    } else {
+        // Pedir nombre y redirigir
+        const nombreUsuario = prompt('¿Cuál es tu nombre?');
+        if (nombreUsuario) {
+            window.location.href = `${window.location.pathname}?nombre=${nombreUsuario}`;
+        }
+    }
+
+
+</script>

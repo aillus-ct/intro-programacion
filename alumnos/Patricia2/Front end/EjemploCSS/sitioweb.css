@@ -1,0 +1,391 @@
+/* Reset y estilos base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Variables CSS para consistencia */
+:root {
+    --color-primario: #3498db;
+    --color-secundario: #2c3e50;
+    --color-acento: #e74c3c;
+    --color-fondo: #ecf0f1;
+    --espaciado: 20px;
+    --radio-borde: 8px;
+    --sombra: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+/* Navegación */
+.navegacion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--color-secundario);
+    padding: 1rem 2rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: var(--sombra);
+}
+
+.logo {
+    color: white;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+/* Botón hamburguesa */
+.hamburguesa {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 0.5rem;
+}
+
+.hamburguesa span {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 3px 0;
+    transition: 0.3s;
+}
+
+/* Menú */
+.menu {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: var(--radio-borde);
+    transition: background-color 0.3s ease;
+}
+
+.menu a:hover {
+    background-color: rgba(255,255,255,0.1);
+}
+
+/* Sección Hero con Carousel */
+.hero {
+    background: linear-gradient(135deg, var(--color-primario), var(--color-secundario));
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-carousel {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 100%);
+    animation: slideShow 9s infinite;
+    z-index: 1;
+}
+
+.hero-slide {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.hero-slide::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.4);
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    animation: fadeInUp 1s ease-out;
+}
+
+.hero-content p {
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+    animation: fadeInUp 1s ease-out 0.3s both;
+}
+
+.cta-button {
+    background-color: var(--color-acento);
+    color: white;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: var(--radio-borde);
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    animation: fadeInUp 1s ease-out 0.6s both;
+}
+
+.cta-button:hover {
+    background-color: #c0392b;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+
+/* Animación del carousel */
+@keyframes slideShow {
+    0% { transform: translateX(0); }
+    33.33% { transform: translateX(0); }
+    36.66% { transform: translateX(-100%); }
+    66.66% { transform: translateX(-100%); }
+    70% { transform: translateX(-200%); }
+    100% { transform: translateX(-200%); }
+}
+
+/* Sección de Productos */
+.productos {
+    padding: 4rem 2rem;
+    background-color: var(--color-fondo);
+}
+
+.productos h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: var(--color-secundario);
+}
+
+.productos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.producto {
+    background: white;
+    border-radius: var(--radio-borde);
+    box-shadow: var(--sombra);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.producto:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.producto img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.producto h3 {
+    padding: 1rem;
+    color: var(--color-secundario);
+    font-size: 1.3rem;
+}
+
+.producto p {
+    padding: 0 1rem;
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+.precio {
+    display: block;
+    padding: 1rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--color-acento);
+    text-align: right;
+}
+
+/* Sección Acerca de */
+.acerca-de {
+    padding: 4rem 2rem;
+    background-color: white;
+}
+
+.acerca-de-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.acerca-de-texto {
+    flex: 1;
+}
+
+.acerca-de-texto h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: var(--color-secundario);
+}
+
+.acerca-de-texto p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #666;
+    margin-bottom: 1.5rem;
+}
+
+.acerca-de-imagen {
+    flex: 1;
+}
+
+.acerca-de-imagen img {
+    width: 100%;
+    height: auto;
+    border-radius: var(--radio-borde);
+    box-shadow: var(--sombra);
+}
+
+/* Footer */
+.footer {
+    background-color: var(--color-secundario);
+    color: white;
+    text-align: center;
+    padding: 2rem;
+}
+
+/* Animaciones */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Media Queries - Responsive Design */
+@media (max-width: 768px) {
+    .navegacion {
+        padding: 1rem 2rem;
+    }
+    
+    /* Mostrar hamburguesa y ocultar menú */
+    .hamburguesa {
+        display: flex;
+    }
+    
+    .menu {
+        position: fixed;
+        top: 70px;
+        left: -100%;
+        width: 100%;
+        height: calc(100vh - 70px);
+        background-color: var(--color-secundario);
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        padding-top: 2rem;
+        gap: 1rem;
+        transition: left 0.3s ease;
+    }
+    
+    .menu.activo {
+        left: 0;
+    }
+    
+    .menu a {
+        font-size: 1.2rem;
+        padding: 1rem 2rem;
+        width: 80%;
+        text-align: center;
+        border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+    
+    /* Animación hamburguesa */
+    .hamburguesa.activo span:nth-child(1) {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+    
+    .hamburguesa.activo span:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .hamburguesa.activo span:nth-child(3) {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+    
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+    
+    .hero-content p {
+        font-size: 1.1rem;
+    }
+    
+    .hero-carousel {
+        grid-template-columns: repeat(3, 100%);
+    }
+    
+    .productos {
+        padding: 2rem 1rem;
+    }
+    
+    .productos-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    /* Responsive para sección Acerca de */
+    .acerca-de-container {
+        flex-direction: column;
+        gap: 2rem;
+    }
+    
+    .acerca-de-texto h2 {
+        font-size: 2rem;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+    
+    .productos h2 {
+        font-size: 2rem;
+    }
+    
+    .cta-button {
+        padding: 0.8rem 1.5rem;
+        font-size: 1rem;
+    }
+}

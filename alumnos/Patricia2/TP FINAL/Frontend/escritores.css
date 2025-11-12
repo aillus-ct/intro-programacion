@@ -1,0 +1,269 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #F0B9CF;
+    display: grid;
+    grid-template-rows: auto 1fr auto; /* header, main, footer */
+    height: 100vh;
+    margin: 0;
+    overflow-x: hidden; /* evita scroll horizontal */
+}
+
+/*Header*/
+
+h1 {
+    color: #4B004C;
+    text-align: center;
+    font-size: 40px;
+}
+
+header {
+    background-color: #E0D1ED;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header nav a {
+    color: red;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+header a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo para el botón Home */
+.home-button {
+    background-color: #c70452;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 20px;
+    cursor: pointer;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.home-button:hover {
+    background-color: #4b004c;
+}
+
+/*Main*/
+main {
+    padding: 20px;
+    overflow-y: auto; /* scroll por si el contenido es más grande que la pantalla */
+}
+
+section {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    column-width: auto;
+}
+
+.escritores-layout {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 24px;
+    align-items: start;
+}
+
+.contenedor-columnas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(320px, auto); /* MÁS ESPACIO: Para compensar el hover */
+    gap: 25px; /* AUMENTADO: Más separación vertical y horizontal */
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px; /* AUMENTADO: Más padding para buffer del hover */
+    align-items: center; /* NUEVO: Centra las tarjetas en su celda del grid */
+}
+
+.tarjetaEscritor {
+    background-color: white;
+    border: 1px solid #4B004C;
+    border-radius: 8px;
+    padding: 0; /* quita el padding para que la imagen llegue a los bordes */
+    margin: 0;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    min-height: 50px;
+    width: 100%;
+    box-sizing: border-box;
+    cursor: pointer;
+    overflow: visible; /* CAMBIADO: permite que el efecto hover se vea completo */
+    position: relative; /* NUEVO: necesario para z-index */
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
+}
+
+.tarjetaEscritor:hover {
+    z-index: 10; /* Aparece por encima de todas las demás */
+    transform: scale(1.02) translateY(-5px); /* COMBINADO: Leve crecimiento + efecto "levitar" */
+    transform-origin: center center; /* El crecimiento se centra perfectamente */
+    box-shadow: 12px 15px 30px rgba(0, 0, 0, 0.4); /* Sombra más dramática que simula elevación */
+    border: 3px solid #C70452; /* Borde visible */
+}
+
+.tarjetaEscritor .contenido {
+    padding: 12px; /* padding para el contenido que no es imagen */
+}
+
+.tarjetaEscritor strong {
+    font-size: clamp(1.2rem, 2.5vw, 2rem); /* RESPONSIVE: Se adapta al ancho de la pantalla */
+    display: block;
+    margin: 0 0 10px 0;
+    line-height: 1.2; /* NUEVO: Controla el espacio entre líneas */
+    text-align: center; /* NUEVO: Centra el texto */
+    word-wrap: break-word; /* NUEVO: Permite cortar palabras largas si es necesario */
+    hyphens: auto; /* NUEVO: Añade guiones automáticamente */
+}
+
+/* Estilos para las imágenes dentro de las tarjetas de escritores */
+.tarjetaEscritor img {
+    display: block; /* Elimina el espacio inline típico de las imágenes */
+    width: 100%; /* La imagen ocupa todo el ancho de la tarjeta */
+    height: 220px; /* Altura fija para mantener consistencia entre tarjetas */
+    object-fit: cover; /* Escala y recorta la imagen para llenar el área sin deformarla */
+    margin: 0; /* Elimina márgenes alrededor de la imagen */
+    border-bottom: 1px solid rgba(0,0,0,0.06); /* Añade una línea sutil debajo de la imagen para separar visualmente el contenido */
+}
+
+.panel-derecho {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Contenedor del input con icono */
+.input-container {
+    position: relative;
+    width: 100%;
+}
+
+.buscador input {
+    width: 100%;
+    padding: 10px 40px 10px 10px; /* Espacio extra a la derecha para el icono */
+    font-size: 16px;
+    border: 1px solid darkblue;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Botón de la lupa dentro del input */
+.search-icon {
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+.search-icon:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.agregar-escritor button {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    background-color:  #c70452;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.agregar-escritor button:hover {
+    background-color: #4b004c;
+}
+@media (max-width: 700px) {
+    .escritores-layout {
+        grid-template-columns: 1fr; /* Una sola columna en pantallas pequeñas */
+        grid-template-rows: auto auto; /* Dos filas: tarjetas y panel derecho */
+    }
+    .contenedor-columnas {
+        grid-template-columns: 1fr; /* Una sola columna para las tarjetas */
+        gap: 20px; /* Menos gap en móviles */
+        padding: 15px; /* Menos padding en móviles */
+    }
+    .panel-derecho {
+        margin-top: 24px;
+    }
+}
+
+/* Media queries específicas para texto de tarjetas */
+@media (max-width: 1200px) {
+    .tarjetaEscritor strong {
+        font-size: 1.6rem; /* Tamaño medio para pantallas medianas */
+    }
+}
+
+@media (max-width: 900px) {
+    .tarjetaEscritor strong {
+        font-size: 1.4rem; /* Tamaño más pequeño para tablets */
+    }
+}
+
+@media (max-width: 600px) {
+    .tarjetaEscritor strong {
+        font-size: 1.2rem; /* Tamaño pequeño para móviles */
+        line-height: 1.1; /* Líneas más juntas en móviles */
+    }
+}
+
+h2 {
+    color: #4B004C;
+    text-align: center;
+    font-size: 30px;
+}
+
+#form-escritor {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+textarea, input {
+    font-family: 'Times New Roman', Times, serif; /* Aplica la fuente Times New Roman al formulario */
+    font-size: 15px;
+}
+
+/*Footer*/
+footer {
+    background-color: #E0D1ED;
+    color: #4B004C;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 20px;
+}
+
+/* =================================
+   LOADING SPINNER (COMPARTIDO)
+   ================================= */
+
+/* Loading indicator */
+.loading-container {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.loading-spinner {
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #c70452;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+    margin: 0 auto 20px;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}

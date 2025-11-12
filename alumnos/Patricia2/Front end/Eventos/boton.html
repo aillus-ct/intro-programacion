@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Botón</title>
+</head>
+<body>
+    <!--<button id="miBoton" onClick="alert('Botón clickeado')">Clickeame!</button>-->
+    <button name="miBoton">Clickeame!</button>
+    <button name="miBoton">Clickeame 2!</button>
+    <input id="nombre" type="text" placeholder="Tu nombre" />
+
+    <script>
+        const botones = document.getElementsByName("miBoton");
+        botones.forEach(boton => {
+            boton.addEventListener("click", function() {
+                alert("Botón clickeado");
+            });
+        });
+
+        const inputNombre = document.getElementById("nombre");
+        inputNombre.addEventListener("input", function() {
+            console.log("Texto cambiado a:", inputNombre.value);
+        });
+
+
+
+
+
+        /*console.log(111, boton);*/
+        /*boton.addEventListener("click", function() {
+            alert("Botón clickeado");
+        });*/
+    </script>
+</body>
+</html>

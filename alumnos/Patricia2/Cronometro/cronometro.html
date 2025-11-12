@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cronómetro</title>
+</head>
+<body>
+    <h1>Cronómetro</h1>
+    <div id="display">00:00:00</div>
+    <button id="iniciar">Iniciar</button>
+    <button id="detener">Detener</button>
+    <button id="reiniciar">Reiniciar</button>
+
+</body>
+<script>
+    let segundos = 0;
+    let intervalo;
+    
+    function actualizarCronometro() {
+        segundos++;
+        actualizarDisplay();
+    }
+    document.getElementById('iniciar').addEventListener('click', function() {
+        if (!intervalo) {
+            intervalo = setInterval(actualizarCronometro, 1000);
+        }
+    });
+    document.getElementById('detener').addEventListener('click', function() {
+        clearInterval(intervalo);
+        intervalo = null;
+    });
+    document.getElementById('reiniciar').addEventListener('click', function() {
+        clearInterval(intervalo);
+        intervalo = null;
+        segundos = 0;
+        actualizarDisplay();
+    });
+    
+    
+
+</script>
+</html>

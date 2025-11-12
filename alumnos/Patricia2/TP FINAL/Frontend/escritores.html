@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escritores</title>
+    <link rel="stylesheet" href="escritores.css">
+    <script src="escritores.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>¡Explora la vida y obra de grandes autores!</h1>
+        <nav>
+            <button class="home-button" onclick="window.location.href='escritores.html'">Home</button>
+        </nav>
+    </header>
+    <main>
+        <section class="escritores">
+            <div class="escritores-layout">
+                <!-- Loading indicator -->
+                <div id="loading-escritores" class="loading-container">
+                    <div class="loading-spinner"></div>
+                    <p>Cargando escritores...</p>
+                </div>
+                
+                <div class="contenedor-columnas" id="contenedor-escritores" style="display: none;">
+                    <!-- Aquí se cargarán dinámicamente las tarjetas de escritores -->
+                </div>
+                <aside class="panel-derecho">
+                    <div class="buscador">
+                        <div class="input-container">
+                            <input id='criterio-busqueda' type="text" placeholder="Buscar escritor...">
+                            <button class="search-icon">🔍</button>
+                        </div>
+                    </div>
+                    <div class="agregar-escritor">
+                        <h2>Agregar un nuevo escritor</h2>
+                        <form id="form-escritor"> 
+                            <textarea id="nombre-escritor" placeholder="Nombre del escritor" required style="overflow-y: auto; max-height: 100px;"></textarea>
+                            <textarea id="urlImagen-escritor" placeholder="URL de la imagen" required style="overflow-y: auto; max-height: 100px;"></textarea>
+                            <textarea id="descripcion-escritor" placeholder="Descripción del escritor" required style="overflow-y: auto; max-height: 100px;"></textarea>
+                            <textarea id="pais-escritor" placeholder="País de origen" required style="overflow-y: auto; max-height: 100px;"></textarea>
+                            <textarea id="genero-escritor" placeholder="Géneros (separados por coma)" required style="overflow-y: auto; max-height: 100px;"></textarea>
+                            <textarea id="obras-escritor" placeholder="Obras literarias (separadas por coma)" required style="overflow-y: auto; max-height: 100px;"></textarea>
+                            <button type="submit">Agregar Escritor</button>
+                        </form>
+                    </div>
+                </aside>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; Escritores - 2025. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

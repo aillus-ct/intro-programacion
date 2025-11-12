@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+</head>
+<body>
+    <div id="contenedor" style="height: 100vh; width: 100vh; display: flex; align-items: center;  " >
+     <script>
+        const nombre = document.getElementById("nombre");
+        const imagen = document.getElementById("imagen");
+        const habilidad = document.getElementById("habilidad");
+        fetch("https://pokeapi.co/api/v2/pokemon/ditto")
+        .then(response => response.json())
+        .then(data => {
+            nombre.textContent = data?.name || 'Sin nombre';
+            const imagenURL = data?.sprites?.other?.dream_world?.front_default;
+            imagen.src = imagenURL;
+            habilidad.innerHTML = data.abilities[0].ability.name;
+        });
+    
+     </script>   
+    </div>
+</body>
+</html>

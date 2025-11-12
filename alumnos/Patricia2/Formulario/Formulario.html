@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+</head>
+<body>
+    <form id="Heroes" style="display: flex; flex-direction: column; width: 200px;">
+        <input type="text" id="nombre" name="nombre" required>
+        <input type="text" id="descripcion" name="descripcion" required>
+        <input type="text" id="poderes" name="poderes" required>
+        <button type="submit">Enviar</button>
+      </form>
+</body>
+<script>
+    // Validar el formulario
+    function validarFormulario(nombre, descripcion, poderes) {
+        if (nombre.length < 2) {
+            alert('El nombre debe tener al menos 2 caracteres');
+            return false;
+        }
+        
+        if (descripcion.length < 2) {
+            alert('La descripción debe tener al menos 2 caracteres');
+            return false;
+        }
+        
+        if (poderes.length < 2) {
+            alert('El poder debe tener al menos 2 caracteres');
+            return false;
+        }
+    return true;
+}
+    // Manejar el envío del formulario
+    const formulario = document.getElementById('Heroes');
+    formulario.addEventListener('submit', function(event) {
+      event.preventDefault(); // Evita el envío del formulario por defecto
+
+      const datosFormulario = new FormData(formulario);
+      const nombre = datosFormulario.get('nombre');
+      const descripcion = datosFormulario.get('descripcion');
+      const poderes = datosFormulario.get('poderes');
+      
+      if (!validarFormulario(nombre, descripcion, poderes)) {
+        return; // Si la validación falla, no continuar
+      }
+      // para continuar con el envio del formulario
+      alert('Formulario enviado con éxito');
+      formulario.reset(); // Reinicia el formulario
+    });
+</script>
+</html>

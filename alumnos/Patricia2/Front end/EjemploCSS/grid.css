@@ -1,0 +1,126 @@
+.contenedor-grid {
+    display: grid;
+    
+    /* Definir columnas */
+    grid-template-columns: 1fr 2fr 1fr;  /* 3 columnas con proporciones */
+    grid-template-columns: 200px 1fr 150px; /* Columnas fijas y flexible */
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas iguales */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsivo */
+    
+    /* Definir filas */
+    grid-template-rows: 100px auto 50px;
+    
+    /* Espaciado */
+    gap: 20px;
+    grid-gap: 20px; /* Versión anterior */
+    grid-row-gap: 10px;
+    grid-column-gap: 15px;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);  /* 3 filas iguales */
+  grid-gap: 10px;
+  background-color: lightblue;
+  padding: 10px;
+  border: 3px solid black;
+  box-sizing: border-box;
+  margin: 25px auto;
+  width: 100%;
+  height: calc(100vh - 130px); /* Ajustar altura */
+}
+
+.one {
+  grid-column: 1;
+  grid-row: 1;
+  background-color: lightyellow;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Imagen principal del clima */
+.clima-icono-principal {
+  width: 64px;
+  height: 64px;
+  margin: 10px 0;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+/* Contenedor para las 3 imágenes inferiores */
+.imagenes-inferiores {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: auto;
+  padding-top: 20px;
+  border-top: 1px solid #ddd;
+}
+
+/* Estilo para las imágenes pequeñas */
+.clima-mini {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+}
+
+.clima-mini:hover {
+  transform: scale(0.5);
+  cursor: pointer;
+}
+
+/* Estilo para otros elementos de la tarjeta 1 */
+.one h3 {
+  margin-top: 0;
+  color: #333;
+}
+
+.one p {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 10px 0;
+  text-align: center;
+}
+
+.one a {
+  color: #007bff;
+  text-decoration: none;
+  padding: 8px 15px;
+  border: 1px solid #007bff;
+  border-radius: 5px;
+  margin: 10px 0;
+  transition: all 0.3s;
+}
+
+.one a:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+.two {
+  grid-column: 2;
+  grid-row: 2;
+  background-color: lightgreen;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.three {
+  grid-column: 3;
+  grid-row: 3;
+  background-color: lightcoral;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+

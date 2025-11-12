@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>Contador</title>
+    </head>
+    <body>
+       <input type="text" id="inputMensaje" placeholder="Escribe un mensaje">
+       <button onClick="agregarMensaje()">Agregar</button>
+
+        <script>
+         // Crear un nuevo elemento
+        const nuevoDiv = document.createElement('div');
+        nuevoDiv.textContent = 'Soy un div nuevo';
+        nuevoDiv.className = 'contenedor';
+
+        // Agregarlo al DOM
+        document.body.appendChild(nuevoDiv);
+
+        function agregarMensaje(){
+            const cajaMensaje = document.getElementById('inputMensaje');
+            const mensaje = document.createElement('span');
+            mensaje.textContent = cajaMensaje?.value || 'No hay mensaje';
+            mensaje.className = 'mensaje';
+            nuevoDiv.appendChild(mensaje);
+            cajaMensaje.value = '';
+        }
+        
+        </script>
+    </body>
+</html>

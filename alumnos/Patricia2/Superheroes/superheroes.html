@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Superhéroes</title>
+    <link rel="stylesheet" href="superheroes.css">
+    <script src="superheroes.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Superhéroes</h1>
+        <nav>
+            <a href="superheroes.html">Home</a>
+        </nav>
+    </header>
+    <main>
+        <section class="superheroes-layout">
+            <div class="contenedor-columnas">
+                </div>
+            <aside class="panel-derecho">
+                <div class="buscador">
+                    <input id='criterio-busqueda' type="text" placeholder="Buscar superhéroe...">
+                    <button>Buscar</button>
+                </div>
+                <div class="agregar-superheroe">
+                    <h2>Agregar un nuevo héroe</h2>
+                    <form id="form-superheroe">
+                        <textarea id="nombre-superheroe" placeholder="Nombre del superhéroe" required style="overflow-y: auto; max-height: 100px;"></textarea>
+                        <textarea id="url-superheroe" placeholder="URL de la imagen" required style="overflow-y: auto; max-height: 100px;"></textarea>
+                        <textarea id="descripcion-superheroe" placeholder="Descripción del superhéroe" required style="overflow-y: auto; max-height: 100px;"></textarea>
+                        <textarea id="poder-superheroe" placeholder="Poderes (separados por coma)" required style="overflow-y: auto; max-height: 100px;"></textarea>
+                        <textarea id="debilidad-superheroe" placeholder="Debilidades (separados por coma)" required style="overflow-y: auto; max-height: 100px;"></textarea>
+                        <button type="submit">Agregar Superhéroe</button>
+                    </form>
+                </div>
+            </aside>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; Superhéroes</p>
+        
+    </footer>
+</body>
+</html>

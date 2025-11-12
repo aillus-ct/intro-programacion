@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalle del Escritor</title>
+    <link rel="stylesheet" type="text/css" href="detalleEscritor.css">
+    <script src="detalleEscritor.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 Detalle del escritor</h1>
+            <nav>
+                <a href="escritores.html" class="nav-link">Home</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="detalle-main">
+        <!-- Loading indicator -->
+        <div id="loading" class="loading-container">
+            <div class="loading-spinner"></div>
+            <p>Cargando información del escritor...</p>
+        </div>
+
+        <!-- Mensaje de error -->
+        <div id="error-message" class="error-container" style="display: none;">
+            <h2>❌ Error</h2>
+            <p id="error-text"></p>
+            <a href="escritores.html" class="btn-volver">Volver</a>
+        </div>
+
+        <!-- contenedor con el detalle del escritor -->
+        <div id="escritor-detalle" class="escritor-detalle-container" style="display: none;">
+            <div class="escritor-section">
+                <div class="escritor-imagen-container">
+                    <img id="escritor-imagen" src="" alt="Foto del escritor" class="escritor-imagen">
+                </div>
+                <div class="escritor-info-principal">
+                    <h1 id="escritor-nombre" class="escritor-titulo"></h1>
+                    <div class="escritor-metadatos">
+                        <span id="escritor-pais" class="metadato-pais"></span>
+                        <span id="escritor-genero" class="metadato-genero"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="escritor-contenido">
+                <section class="descripcion-section">
+                    <h2>📖 Biografía</h2>
+                    <p id="escritor-descripcion" class="descripcion-texto"></p>
+                </section>
+
+                <section class="obras-section">
+                    <h2>📚 Obras Principales</h2>
+                    <ul id="escritor-obras" class="obras-lista"></ul>
+                </section>
+
+                <section class="acciones-section">
+                    <a href="escritores.html" class="btn btn-volver">← Volver</a>
+                    <button id="btn-editar" class="btn btn-editar">✏️ Editar</button>
+                    <button id="btn-eliminar" class="btn btn-eliminar">🗑️ Eliminar</button>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>📚 Detalle del escritor - 2025. Explora el mundo de la literatura.</p>
+    </footer>
+</body>
+</html>

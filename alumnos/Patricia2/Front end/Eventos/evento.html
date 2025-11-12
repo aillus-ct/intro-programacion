@@ -1,0 +1,42 @@
+<html>
+<head>
+    <title>Contador</title>
+</head>
+<body>
+    <button id="incrementar">+</button>
+    <span id="contador">0</span>
+    <button id="decrementar">-</button>
+    <button id="multiplicar">*3</button>
+    <button id="resetear">0</button>
+
+    <script>
+        let contador = 0;
+        const spanContador = document.getElementById('contador');
+        const botonIncrementar = document.getElementById('incrementar');
+        const botonDecrementar = document.getElementById('decrementar');
+        const botonMultiplicar = document.getElementById('multiplicar');
+        const botonResetear = document.getElementById('resetear');
+
+        botonIncrementar.addEventListener('click', () => {
+            contador++;
+            spanContador.textContent = contador;
+        });
+
+        botonDecrementar.addEventListener('click', () => {
+            contador--;
+            spanContador.textContent = contador;
+        });
+        
+        botonMultiplicar.addEventListener('click', () => {
+            contador *= 3;
+            spanContador.textContent = contador;
+        });
+
+        botonResetear.addEventListener('click', () => {
+            contador = 0;
+            spanContador.textContent = contador;
+        });
+    </script>
+</body>
+</html>
+

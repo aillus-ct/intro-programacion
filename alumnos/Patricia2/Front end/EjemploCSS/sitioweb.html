@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Sitio Responsive</title>
+    <link rel="stylesheet" href="sitioweb.css">
+</head>
+<body>
+    <!-- Navegación --> // Menú hamburguesa
+    <nav class="navegacion">
+        <div class="logo">MiSitio</div>
+        <div class="hamburguesa" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul class="menu" id="menu">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#productos">Productos</a></li>
+            <li><a href="#acerca-de">Acerca de</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+    
+    <!-- Sección Hero con Carousel -->
+    <section class="hero" id="inicio">
+        <div class="hero-carousel">
+            <div class="hero-slide" style="background-image: url('https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1926&q=80')"></div>
+            <div class="hero-slide" style="background-image: url('https://images.unsplash.com/photo-1497215842964-222b430dc094?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80')"></div>
+            <div class="hero-slide" style="background-image: url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80')"></div>
+        </div>
+        <div class="hero-content">
+            <h1>Bienvenido a Nuestro Sitio</h1>
+            <p>Descubre productos increíbles con diseño moderno</p>
+            <button class="cta-button">Ver Productos</button>
+        </div>
+    </section>
+    
+    <!-- Galería de Productos -->
+    <section class="productos" id="productos">
+        <h2>Nuestros Productos</h2>
+        <div class="productos-grid">
+            <div class="producto">
+                <img src="producto1.jpg" alt="Producto 1">
+                <h3>Producto Premium</h3>
+                <p>Descripción del producto con características principales.</p>
+                <span class="precio">$299</span>
+            </div>
+            <!-- Repetir para más productos -->
+        </div>    </section>
+    
+    <!-- Sección Acerca de -->
+    <section class="acerca-de" id="acerca-de">
+        <div class="acerca-de-container">
+            <div class="acerca-de-texto">
+                <h2>Acerca de Nosotros</h2>
+                <p>Somos una empresa comprometida con la excelencia y la innovación. Desde nuestros inicios, nos hemos dedicado a brindar productos de la más alta calidad a nuestros clientes.</p>
+                <p>Nuestro equipo de profesionales altamente capacitados trabaja día a día para superar las expectativas y crear soluciones que marquen la diferencia en el mercado.</p>
+                <p>Con años de experiencia en el sector, nos enorgullece ser líderes en nuestro campo y continuar creciendo junto a nuestros clientes.</p>
+            </div>
+            <div class="acerca-de-imagen">
+                <img src="https://togrowagencia.com/wp-content/uploads/2023/08/Empresas-de-desarrollo-de-software-en-Bogota-1.jpg" alt="Acerca de nosotros">
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 MiSitio. Todos los derechos reservados.</p>
+    </footer>
+        
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('menu');
+            const hamburguesa = document.querySelector('.hamburguesa');
+            
+            menu.classList.toggle('activo');
+            hamburguesa.classList.toggle('activo');
+        }
+        //el toggleMenu es para mostrar y ocultar el menú en dispositivos móviles
+        // Cerrar menú al hacer clic en un enlace
+        document.querySelectorAll('.menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                const menu = document.getElementById('menu');
+                const hamburguesa = document.querySelector('.hamburguesa');
+                
+                menu.classList.remove('activo');
+                hamburguesa.classList.remove('activo');
+            });
+        });
+    </script>
+</body>
+</html>

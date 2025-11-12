@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>Lista de tareas</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+  <script src='main.js'></script>
+</head>
+<body>
+  <input type="text" id="nuevaTarea" placeholder="Nueva tarea">
+  <button id="agregar">Agregar</button>
+  <ul id="listaTareas"></ul>
+
+  <script>
+    const input = document.getElementById('nuevaTarea');
+    const botonAgregar = document.getElementById('agregar');
+    const lista = document.getElementById('listaTareas');
+
+    let tareaEditando = null;
+
+    function agregarTarea() {
+        const textoTarea = input.value.trim();
+        
+        if (textoTarea === '') {
+            alert('Por favor ingresa una tarea');
+            return;
+        }
+        
+        if (tareaEditando) {
+            tareaEditando.querySelector('span').textContent = textoTarea;
+            tareaEditando = null;
+            botonAgregar.textContent = 'Agregar';
+        } else {
+            const li = document.createElement('li');
+            //li.textContent = textoTarea;
+            const span = document.createElement('span');
+            span.textContent = textoTarea;
+            li.appendChild(span);
+        
+
+        // Crear elementos
+        const botonEliminar = document.createElement('button');
+        
+        //li.textContent = textoTarea;
+        botonEliminar.textContent = 'Eliminar';
+        
+        // Agregar evento de eliminar
+        botonEliminar.addEventListener('click', () => {
+            lista.removeChild(li);
+        });
+        // agrego el boton editar
+        const botonEditar = document.createElement('button');
+
+        //li.textContent = textoTarea;
+        botonEditar.textContent = 'Editar';
+
+        //agrego el evento de editar
+        botonEditar.addEventListener('click', () => {
+            input.value = span.textContent; // Para tomar siempte el texto actual
+            // Cambiar comportamiento del botón agregar por guardar
+            botonAgregar.textContent = 'Guardar';
+            tareaEditando = li;
+            input.focus();
+            /*botonAgregar.removeEventListener('click', agregarTarea);
+            botonAgregar.addEventListener('click', function guardar() {
+                const nuevoTexto = input.value.trim();
+                if (nuevoTexto === '') {
+                    alert('Por favor ingresa una tarea');
+                    return;
+                }
+                li.firstChild.textContent = nuevoTexto;
+                input.value = '';
+                // volver al nombre del botón original - agregar
+                botonAgregar.textContent = 'Agregar';
+                botonAgregar.removeEventListener('click', guardar);
+                botonAgregar.addEventListener('click', agregarTarea);
+            });*/
+
+        });
+
+        // Agregar elementos al DOM
+        li.appendChild(botonEliminar);
+        li.appendChild(botonEditar);
+        lista.appendChild(li);
+    }
+
+        
+        // Limpiar input
+        input.value = '';
+        input.focus();
+    }
+
+    botonAgregar.addEventListener('click', agregarTarea);
+
+    // También agregar con Enter
+    input.addEventListener('keydown', (evento) => {
+        if (evento.key === 'Enter') {
+            agregarTarea();
+        }
+    });
+  </script>
+</body>
+</html>

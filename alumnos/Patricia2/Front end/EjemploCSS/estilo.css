@@ -1,0 +1,52 @@
+.contenedor {
+  padding: 10px;
+  font-size: 14px;
+  background-color: blue;
+  height: 80vh;
+  /* display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  */
+  display: grid;
+  grid-template-columns: 60%;
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+  .contenedor {
+      padding: 20px;
+      font-size: 16px;
+      max-width: 750px;
+      margin: 0 auto;
+  }
+}
+
+/* Escritorio */
+@media (min-width: 1024px) {
+  .contenedor {
+      padding: 30px;
+      font-size: 18px;
+      max-width: 1200px;
+      /* flex-direction: row; */
+      
+      grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Pantalla grande */
+@media (min-width: 1200px) {
+  .contenedor {
+      max-width: 1400px;
+      /* justify-content: end; */
+  }
+}
+
+.tarjeta {
+  width: 20%;
+  height: 20%;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
